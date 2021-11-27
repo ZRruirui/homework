@@ -1,6 +1,8 @@
 package week1
 
 // 自己想的
+// 时间复杂度 O(n)
+// 空间复杂度 O(n)
 func plusOne(digits []int) []int {
 	ans := make([]int, len(digits)+1)
 	ans[len(digits)] = 1
@@ -18,6 +20,8 @@ func plusOne(digits []int) []int {
 }
 
 // 参考题解提示
+// 时间复杂度 O(m) m 为尾0数
+// 空复杂度 O(1)
 func plusOne2(digits []int) []int {
 	for i := len(digits) - 1; i >= 0; i-- {
 		if digits[i] != 9 {

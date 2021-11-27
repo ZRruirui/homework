@@ -5,6 +5,8 @@ type ListNode struct {
 	Next *ListNode
 }
 
+// 时间复杂度 O(n)
+// 空间复杂度 O(1)
 func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
 	pro := &ListNode{}
 	p := pro
